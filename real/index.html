@@ -18,7 +18,7 @@
   <div class="container">
     <header class="row">
       <div class="col-md-6">
-        <h1>Family yahoo</h1>
+        <h1>Family</h1>
       </div>
     </header>
 
@@ -48,7 +48,7 @@
 <!-- Large modal -->
     <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Create New Contact</button>
 
-    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="panel panel-default">
@@ -58,14 +58,13 @@
             </div>
 
             <div class="panel-body">
-              <form>
                 <div class="form-group">
                   <label for="name">Name</label>
-                  <input type="text" class="form-control" id="contact__name" placeholder="Name">
+                  <input type="text" class="form-control" id="contact_name" placeholder="Name">
                 </div>
                 <div class="form-group">
                   <label for="picture">Picture</label>
-                  <input type="url" class="form-control" id="contact_picture" placeholder="url of Avatar">
+                  <input type="text" class="form-control" id="contact_picture" placeholder="url of Avatar">
                 </div>
                 <div class="form-group">
                   <label for="age">Age</label>
@@ -92,7 +91,6 @@
                   </div>
                 </div>
                 <button type="submit" class="btn btn-primary" id="main_submit">Submit</button>
-              </form>
             </div>
 
           </div>

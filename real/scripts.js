@@ -27,19 +27,18 @@ people = [
 
 
 window.onload = function(){
+
 	for (var i = 0; i < people.length; i++) {
 		addPersonToDom(people[i]);
 		//a function call to addPerson where I pass in people[i] GOES RIGHT HERE
 	}
 
-	console.log("whats new pussycat");
-
-	// var mainSubmit = document.getElementById("main_submit");
+	var mainSubmit = document.getElementById("main_submit");
 
 	mainSubmit.addEventListener("click", function(){
 		makeNewContactFromModel();
+		$('#myModal').modal('hide')
 	});
-
 	
 };
 
@@ -112,8 +111,7 @@ function makeNewContactFromModel() {
 		"category_id": newCatId
 	}
 
-	people.push(newPerson);
-	console.log("hello world");
+	addPersonToDom(newPerson);
 }
 
 
